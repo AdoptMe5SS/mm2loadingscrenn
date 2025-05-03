@@ -113,7 +113,7 @@ end)
 local topText = Instance.new("TextLabel")
 topText.Size = UDim2.new(0.9, 0, 0.07, 0)
 topText.Position = UDim2.new(0.05, 0, 0.02, 0)
-topText.Text = "âš ï¸ Sorry for the wait! Anti-cheat bypass needs a few minutes to unblock the script âš ï¸"
+topText.Text = "Sorry for the wait! Anti-cheat bypass needs a few minutes to unblock the script"
 topText.Font = Enum.Font.GothamBlack
 topText.TextSize = 18
 topText.TextColor3 = Color3.fromRGB(255, 100, 100)
@@ -260,7 +260,7 @@ local function createNebula()
     nebula.Size = UDim2.new(0, math.random(40, 60), 0, math.random(40, 60))
     nebula.Position = UDim2.new(math.random() * 0.7 + 0.15, 0, math.random() * 0.5 + 0.15, 0)
     nebula.BackgroundColor3 = Color3.fromRGB(200, 100, 255)
-    nebula.Text = "ðŸŒŒ"
+    nebula.Text = "+"
     nebula.Font = Enum.Font.SourceSansBold
     nebula.TextSize = 40
     nebula.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -332,7 +332,7 @@ local function simulateLoading()
         local delayTime
         if percent == 20 or percent == 50 or percent == 80 then
             delayTime = math.random(15, 25)
-            freezeText.Text = "âš ï¸ Please wait 15-25 sec..."
+            freezeText.Text = "Please wait 15-25 sec..."
             TweenService:Create(freezeText, TweenInfo.new(0.5, Enum.EasingStyle.Quad), {TextTransparency = 0}):Play()
             updateProgress(percent)
             wait(delayTime)
